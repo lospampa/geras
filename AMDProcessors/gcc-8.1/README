@@ -1,8 +1,8 @@
 
 I. File list
 -------------
-aurora.c		Aurora functions implementation		
-aurora.h		Aurora header
+geras.c		Geras functions implementation		
+geras.h		Geras header
 env.c			OpenMP internal controler variables
 libgomp.h 		libgomp header
 libgomp_g.h 		libgomp header
@@ -12,7 +12,7 @@ Makefile.am		OpenMP libgomp makefile.am
 
 
 
-II. Installing Aurora
+II. Installing Geras
 ---------------------
 
 A. Copy all files into the libgomp directory: 
@@ -24,17 +24,14 @@ B. Make && Make install:
 
 
 
-III. Using Aurora
+III. Using Geras
 -----------------
 
 A. Export PATH:
 		- $export LD_LIBRARY_PATH=/path-to-gcc-bin/lib64:$LD_LIBRARY_PATH
 
 B. Setting the optimization metric:
-		- $export OMP_AURORA=
-			* PERFORMANCE or performance;
-			* ENERGY or energy;
-			* EDP or edp;
+		- $export OMP_GERAS=AGING
 
 C. Defining the number of threads that will start the search algorithm:
-	- OMP_AURORA_START_SEARCH: NUM_THREADS
+	- OMP_GERAS_START_SEARCH: NUM_THREADS
